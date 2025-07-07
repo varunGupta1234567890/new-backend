@@ -1,0 +1,8 @@
+# //kaunsi files me isko implement ni karna
+/.vscode
+/node_modules
+./dist
+
+*.env
+.env
+.env.*
