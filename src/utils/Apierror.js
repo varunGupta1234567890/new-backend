@@ -1,5 +1,5 @@
-class Apierror extends Error {
-    constructor(  //initial state set karne ke liye
+class ApiError extends Error {
+    constructor(    //initial state set karne ke liye
         statusCode,
         message= "Something went wrong",
         errors = [],
@@ -22,4 +22,4 @@ class Apierror extends Error {
     }
 }
 
-export {Apierror}
+export {ApiError}

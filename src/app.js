@@ -14,5 +14,15 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))//jab url se data aa
 app.use(express.static("public"))//public assets ke liye eg images , favicon
 app.use(cookieParser())//server se user ki cookies access karne ke liye 
 
-export {app}
+//routes import
+import userRouter from './routes/user.routes.js'
+
+
+
+//routes declaration
+app.use("/api/v1/users",userRouter)
+
+//http://localhost:8000/api/v1/users/register
+export default app
 //CORS KE OPTIONS H
+//multer user se file lega or cloudnary upload karega
